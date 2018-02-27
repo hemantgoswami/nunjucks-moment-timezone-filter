@@ -1,0 +1,43 @@
+{
+  "author": {
+    "name": "Hemantkumar Goswami",
+    "email": "hackenzworkshop@gmail.com",
+    "url": "http://www.hemantgoswami.com"
+  },
+  "name": "nunjucks-moment-timezone-filter",
+  "version": "0.0.1",
+  "description": "Provides moment timezone filter for Nunjucks template engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -u tdd test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hemantgoswami/nunjucks-moment-timezone-filter.git"
+  },
+  "keywords": [
+    "nunjucks",
+    "filter",
+    "timezone",
+    "date",
+    "moment"
+  ],
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://github.com/hemantgoswami/nunjucks-moment-timezone-filter/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/hemantgoswami/nunjucks-moment-timezone-filter/issues"
+  },
+  "homepage": "https://github.com/hemantgoswami/nunjucks-moment-timezone-filter",
+  "dependencies": {
+    "moment-timezone": "^0.5.14"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1",
+    "nunjucks": "^3.1.2"
+  }
+}
