@@ -1,13 +1,43 @@
 # nunjucks-moment-timezone-filter
 Provides moment timezone filter for Nunjucks template engine
 
-> It has two main components dateFilter (date) and newUTCDate (newDate) filters.
+##### Installation
 
-##### usage #1:
+Getting Started
+---------------
+
+You may install this plugin with this command:
+
+NPM:
+```shell
+npm i nunjucks-moment-timezone-filter
+```
+
+Yarn:
+```shell
+yarn add nunjucks-moment-timezone-filter
+```
+
+Usage
+-----
+
+Once the filter is installed you can now add it to *nunjucks* environment:
+
+```js
+var dateFilters = require('nunjucks-moment-timezone-filter');
+var env = new nunjucks.Environment();
+dateFilters.install(env);
+```
+
+Examples
+--------
+
+> It has two main components dateFilter (date) and newUTCDate (newDate) filters.
+##### example usage #1:
 > If date string is available, convert it into object first and then use it
 * `{{ my_utc_date | newDate | date(format) }}`
  
-##### usage #2:
+##### example usage #2:
 > If date object is available pass it in and use it in various ways
 * `{{ my_date_object | date('YYYY-MM-DD') }}` to get date in a format
     * Above method will return a string
