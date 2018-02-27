@@ -24,9 +24,16 @@ Usage
 Once the filter is installed you can now add it to *nunjucks* environment:
 
 ```js
-var dateFilters = require('nunjucks-moment-timezone-filter');
-var env = new nunjucks.Environment();
+const dateFilters = require('nunjucks-moment-timezone-filter');
+const env = new nunjucks.Environment();
 dateFilters.install(env);
+```
+OR if you want to have custom name or control what you want to enable
+```js
+const dateFilters = require('nunjucks-moment-timezone-filter');
+const env = new nunjucks.Environment();
+env.addFilter('date', dateFilters.dateFilter);
+env.addFilter('newDate', dateFilters.newDate);
 ```
 
 Examples
