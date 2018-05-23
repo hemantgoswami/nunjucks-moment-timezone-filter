@@ -31,6 +31,21 @@ suite('Testing nunjucks-moment-timezone-filte', () => {
       newDateFilter(this.testDate).format(this.dateFormat).should.equal(this.testMoment.format(this.dateFormat))
     })
 
+    test('Should test null date with newDate filter', () => {
+      const newDate = newDateFilter(null).format(this.dateFormat)
+      newDate.should.not.equal('Invalid date')
+    })
+
+    test('Should test string null date with newDate filter', () => {
+      const newDate = newDateFilter('null').format(this.dateFormat)
+      newDate.should.equal('Invalid date')
+    })
+
+    test('Should test old old date with newDate filter', () => {
+      const newDate = newDateFilter('0001-01-01').format(this.dateFormat)
+      newDate.should.equal('0001-01-01 00:00:00')
+    })
+
     test('Should test the original date with timezone ', () => {
       const dateObj = dateFilter(this.testMoment, 'tz', 'Asia/Kolkata')
       const timeZoneDate = dateObj.format(this.dateFormat)

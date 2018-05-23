@@ -45,7 +45,7 @@ function dateFilter (date, format) {
 }
 
 function newUTCDate (date = '') {
-  if (date === '') {
+  if (!date) {
     return new moment.tz('UTC')
   } else {
     return new moment.tz(date, '', 'UTC')
