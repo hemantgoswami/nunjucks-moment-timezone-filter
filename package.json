@@ -5,7 +5,7 @@
     "url": "http://www.hemantgoswami.com"
   },
   "name": "nunjucks-moment-timezone-filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides moment timezone filter for Nunjucks template engine",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/hemantgoswami/nunjucks-moment-timezone-filter",
   "dependencies": {
-    "moment-timezone": "^0.5.14"
+    "moment-timezone": "^0.5.17"
   },
   "devDependencies": {
     "chai": "^4.1.2",
