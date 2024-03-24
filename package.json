@@ -5,7 +5,7 @@
     "url": "http://www.hemantgoswami.com"
   },
   "name": "nunjucks-moment-timezone-filter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Provides moment timezone filter for Nunjucks template engine",
   "main": "index.js",
   "scripts": {
